@@ -17,6 +17,10 @@ const CLIP_SHAPES = [
   () => "polygon(0% 44%, 24% 6%, 82% 0%, 100% 36%, 82% 100%, 18% 94%)",
 ];
 
+/**
+ * P5Menu: The core Persona 5 style animated menu.
+ * Features a polygon clip-path that wiggles when active, custom fonts, and keyboard navigation.
+ */
 export default function P5Menu({ onNavigate }) {
   const [active, setActive] = useState(() => {
     const saved = sessionStorage.getItem('p5-menu-active');
@@ -26,6 +30,7 @@ export default function P5Menu({ onNavigate }) {
   const isFirstRenderAudio = useRef(true);
   const [animKey, setAnimKey] = useState(0);
 
+  // Sets the new active menu item and triggers the animation key to restart the wiggle effect
   const activate = (idx) => {
     setActive(idx);
     setAnimKey(k => k + 1);

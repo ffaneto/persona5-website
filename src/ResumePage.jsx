@@ -17,6 +17,10 @@ const EDUCATION_ROWS = [
   { index: "04", title: "Backend Practice", status: "Daily" },
 ];
 
+/**
+ * Resume page highlighting skills and education.
+ * Displays a list of cards with detailed inner rows on the right.
+ */
 export default function ResumePage() {
   const navigate = useNavigate();
   const [active, setActive] = useState(1);

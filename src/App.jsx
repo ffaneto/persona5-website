@@ -15,6 +15,10 @@ const BGM_VOLUME_KEY = 'p5-bgm-volume'
 const DEFAULT_VOLUME = 0.45
 const FADE_MS = 450
 
+/**
+ * Global Background Music (BGM) player component.
+ * Handles fading in/out, volume control, and auto-play logic with local storage persistence.
+ */
 function BackgroundMusic() {
   const audioRef = useRef(null)
   const fadeRafRef = useRef(null)
@@ -171,6 +175,9 @@ function BackgroundMusic() {
   )
 }
 
+/**
+ * Home screen containing the main Persona 5 styled menu.
+ */
 function MenuScreen() {
   const navigate = useNavigate()
 
@@ -205,6 +212,9 @@ function SiteBackgroundVideo() {
   )
 }
 
+/**
+ * Wraps routes in Framer Motion's AnimatePresence to enable page exit/enter animations.
+ */
 function AnimatedRoutes() {
   const location = useLocation()
   return (

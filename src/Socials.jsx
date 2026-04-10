@@ -44,6 +44,10 @@ const ITEMS = [
   },
 ];
 
+/**
+ * Socials and contact links page.
+ * Integrates with external URLs like GitHub, LinkedIn, and Email.
+ */
 export default function Socials() {
   const [active, setActive]               = useState(0);
   const [mounted, setMounted]             = useState(false);

@@ -48,6 +48,10 @@ const ITEMS = [
 
 ];
 
+/**
+ * Side Projects page showcasing developer work.
+ * Uses a split layout with a list on the left and detail view on the right.
+ */
 export default function SideProjectsPage() {
   const navigate = useNavigate();
   const [active, setActive] = useState(0);

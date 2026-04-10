@@ -3,6 +3,10 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import { playSelectSound } from "./utils/audio.js";
 
+/**
+ * Renders the default multi-stripe Persona 5 transition overlay.
+ * Stripes slide in from the right to obscure the screen before changing routes.
+ */
 function DefaultTransition() {
   const stripes = [
     { color: "#0d0d0d", left: "72vw", width: "24vw", delay: 0 },
